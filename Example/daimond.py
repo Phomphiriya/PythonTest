@@ -17,7 +17,7 @@ def pyramidFull(inp):
         for j in range(l):
             print("*",end='')
         print(end='\n')
-        l -= 2        
+        l -= 2   
 
 
 
