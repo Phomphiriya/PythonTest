@@ -23,36 +23,30 @@ class Stack:
     def __str__(self):
         return str(self.items)
 
-def isMatch(i,j):
-    if i == "{" and j == "}":
-        return True
-    elif i == "(" and j == ")":
-        return True
-    elif i == "[" and j == "]":
-        return True
-    else:
-        return False
+def lookingTree(s):
+    scopy  = s.items.copy()
+    scopy = Stack(scopy)
+    count = 0
+    highest = 0
+    while not scopy.empty():
+        if scopy.peek() > highest:
+            count += 1
+            highest = scopy.peek()
+            scopy.pop()
+        else:
+            scopy.pop()
+    return count
 
-inp = input("Enter bracket : ")
-s=Stack()
-openB = ["{","(","["]
-closeB = [")","]","}"]
-
+inp = input("Enter input : ").split(',')
+s = Stack()
 for i in inp:
-    if i in openB:
-        s.push(i)
-    elif i in closeB:
-        a = s.peek()
-        if isMatch(a,i):
-            s.pop()
+    if i == 'B':
+        print(lookingTree(s))
     else:
-        pass
-
-if s.empty():
-    print("Match")
-else:
-    print("Not match")
+        a = int(i)
+        s.push(a)
+print(s)
 
 # Test case
-# ({[]})
-# Match!!
+# 1,6,3,2,B
+# 3

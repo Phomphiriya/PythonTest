@@ -1,4 +1,3 @@
-# 1 1 2 2 4 4 5 5 5 -1 7 7 8 9
 inp = input("Enter : ").split('-1')
 ls = []
 dictT = {}
@@ -20,3 +19,7 @@ ls3 = list(dictT.values())
 maxT = max(ls3)
 indexT = ls3.index(maxT)
 print(ls2[indexT])
+
+# Testcase
+# 1 1 2 2 4 4 5 5 5 -1 7 7 8 9
+# 5
