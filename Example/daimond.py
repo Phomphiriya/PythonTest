@@ -19,8 +19,5 @@ def pyramidFull(inp):
         print(end='\n')
         l -= 2   
 
-
-
-
 inp = int(input())
 pyramidFull(inp)
