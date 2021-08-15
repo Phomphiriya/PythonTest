@@ -14,7 +14,10 @@ def decode(temp):
             div = (j - ord('a')+1)
 
             return 4*(div)
-
-
+            
 inp = input("Enter code : ")
 print(decode(findCode(inp)))
+
+# testcase
+# input aabc
+# output 4 (a=4,b=8,c=n+4)
