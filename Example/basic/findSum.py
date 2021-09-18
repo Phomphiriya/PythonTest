@@ -9,8 +9,8 @@ def findSum(inp):
             for j in range(i+1,inpLen):
                 for k in range(j+1,inpLen):
                     eqZero = inp[i] + inp[j] + inp[k]
-                    ls = [inp[i],  inp[j],  inp[k]] #********
-                    if eqZero == 0 and ls not in lsAns:
+                    ls = [inp[i],  inp[j],  inp[k]]
+                    if eqZero == 5 and ls not in lsAns:
                         lsAns.append(ls)
     return lsAns
 

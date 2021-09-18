@@ -15,6 +15,7 @@ elif len(inp) == 2:
 elif len(inp) == 1:
     print(rangefor(stop=inp[0]))
 
+
 # test case
 # input 1.0 10.0 1.3
 # output [1.0, 2.3, 3.6, 4.9, 6.2, 7.5, 8.8]
