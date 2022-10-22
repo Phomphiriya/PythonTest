@@ -1,7 +1,6 @@
 def decToRoman(num):
     num = int(num)
     roman = ""
-
     dec = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
     sym = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
     i = 0
@@ -31,5 +30,6 @@ def romanToDec(roman):
     print (num)
     return num
 
-inp = int(input("Enter your number : "))
-romanToDec(decToRoman(inp))
+inp = input("Enter your number : ")
+# romanToDec(decToRoman(inp))
+romanToDec(inp)

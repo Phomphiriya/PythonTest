@@ -15,10 +15,10 @@ print(len(ls)) #มีกี่ตัวในlist
 
 
 #มีกี่ตัวในindex
-for i in range(len(ls)):
-    if ls[i] == 20:
-        ls[i] = 15
-print(ls)
+# for i in range(len(ls)):
+#     if ls[i] == 20:
+#         ls[i] = 15
+# print(ls)
 
 for i in ls:
     if i == 20:

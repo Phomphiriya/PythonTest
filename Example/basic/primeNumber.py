@@ -7,10 +7,8 @@ class number:
         for i in range(2,self.number1):
             if (self.number1 % i) == 0:
                isPrime = False
-               return("Prime")
-
         if isPrime == True:
-            return ("Prime")
+            return("Prime")
         else:
             return ("Not prime")
 

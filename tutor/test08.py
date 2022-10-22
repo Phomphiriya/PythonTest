@@ -26,5 +26,11 @@ def area(r):
     area = round(area,2)
     return area
 
+def findthemost(a):
+    return max(a)
+
 inp = int(input("Enter your radius :"))
 print(area(inp))
+inp2 = list(map(int,input("Enter list of number: ").split(',')))
+print(inp2)
+print(findthemost(inp2))

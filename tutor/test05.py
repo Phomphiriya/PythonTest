@@ -8,7 +8,7 @@ add ={"weight" : "61"}
 dict.update(add)
 
 print(dict["name"])
-# print(dict.get("age"))
+print(dict.get("age"))
 print(dict.values())
 print(dict.keys())
 

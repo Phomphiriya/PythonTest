@@ -18,3 +18,9 @@ elif n >20:
     print("*** No Candidate Wins ***")
 else:
     print("*** No Candidate Wins ***")
+
+# inp = list(map(int,input("Enter : ").split()))
+# max = 0
+# ans = 0
+
+# print(inp.count(1))
