@@ -19,5 +19,5 @@ def pyramidFull(inp):
         print(end='\n')
         l -= 2   
 
-inp = int(input())
+inp = int(input("Enter :"))
 pyramidFull(inp)
